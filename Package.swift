@@ -4,6 +4,8 @@
 import PackageDescription
 import Foundation
 
+let versionOfSwiftCGIResponder: Version = "0.1.0-dev20171208"
+
 let samples: [String?] = [
   "WithoutLibrary", // CRS-0000
   "SimpleCGI", // CRS-0001
@@ -54,7 +56,7 @@ let package = Package(
   name: "CGIResponderSamples",
   products:products,
   dependencies: [
-    .package(url:"https://github.com/YOCKOW/SwiftCGIResponder.git", from:"0.1.0-dev20171206"),
+    .package(url:"https://github.com/YOCKOW/SwiftCGIResponder.git", from:versionOfSwiftCGIResponder),
   ],
   targets:targets,
   swiftLanguageVersions:[4]
