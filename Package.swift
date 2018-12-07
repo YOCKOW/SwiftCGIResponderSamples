@@ -1,10 +1,10 @@
-// swift-tools-version:4.0
+// swift-tools-version:4.2
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 import Foundation
 
-let versionOfSwiftCGIResponder: Version = "0.1.0-dev20171208"
+let versionOfSwiftCGIResponder: Version = "0.2.0-dev20181207"
 
 let samples: [String?] = [
   "WithoutLibrary", // CRS-0000
@@ -59,5 +59,5 @@ let package = Package(
     .package(url:"https://github.com/YOCKOW/SwiftCGIResponder.git", from:versionOfSwiftCGIResponder),
   ],
   targets:targets,
-  swiftLanguageVersions:[4]
+  swiftLanguageVersions:[.v4, .v4_2]
 )
